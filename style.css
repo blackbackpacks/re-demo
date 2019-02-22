@@ -1,0 +1,20 @@
+.header{
+    height: 90px;
+    text-align: center;
+}
+.navbar-brand{
+    float: left;
+}
+.navbar-brand span{
+    font-size: 2rem;
+}
+.navbar-brand .your{
+    color: #00e284;
+}
+.navbar-brand .logo{
+    color: #ffffff;
+}
+
+nav .nav .nav-item.active{
+    border-bottom: 3px solid #00e284;
+}
