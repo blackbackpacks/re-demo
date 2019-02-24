@@ -1,11 +1,22 @@
+/* 导航栏 */
 .header{
+    margin: 0 auto;
     height: 90px;
     text-align: center;
+    z-index: 100;
+}
+.header .nav-container{
+    width: 70%;
+    margin: 0 auto;
 }
 .navbar-brand{
+    padding: 0 !important;
+    height: 90px;
+    line-height: 90px !important;
     float: left;
 }
 .navbar-brand span{
+    font-weight: bold;
     font-size: 2rem;
 }
 .navbar-brand .your{
@@ -15,6 +26,30 @@
     color: #ffffff;
 }
 
+nav .nav .nav-item{
+    padding: 29px 0;
+    margin-left: 4rem;
+}
+nav .nav .nav-item .img-qq{
+    
+    margin-left: 3rem;
+}
+nav .nav .nav-item .nav-link{
+    margin: 0;
+    padding: 0;
+}
 nav .nav .nav-item.active{
-    border-bottom: 3px solid #00e284;
+    border-bottom: 2px solid #00e284;
+}
+/* 导航end */
+
+/* home */
+.home{
+    z-index: -2;
+    margin-top: -90px;
+    position: relative;
+    width:100%;
+    height: 600px;
+    background: url('images/home.gif') no-repeat;
+    background-size: 100% 130%;
 }
