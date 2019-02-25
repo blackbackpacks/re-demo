@@ -1,18 +1,15 @@
 /* 导航栏 */
 .header{
     margin: 0 auto;
+    padding-left:2rem;
     height: 90px;
     text-align: center;
-    z-index: 100;
 }
-.header .nav-container{
-    width: 70%;
-    margin: 0 auto;
-}
+
 .navbar-brand{
     padding: 0 !important;
-    height: 90px;
-    line-height: 90px !important;
+    /* height: 90px;
+    line-height: 90px !important; */
     float: left;
 }
 .navbar-brand span{
@@ -45,11 +42,118 @@ nav .nav .nav-item.active{
 
 /* home */
 .home{
-    z-index: -2;
-    margin-top: -90px;
     position: relative;
     width:100%;
     height: 600px;
-    background: url('images/home.gif') no-repeat;
-    background-size: 100% 130%;
+    background: url('images/bg_img2.png') no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #FFFFFF
 }
+.home .home-container{
+    padding-top: 2rem;
+    overflow: hidden;
+    margin: 0 auto; 
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.home .home-container h1{
+    margin-top: 5rem;
+}
+.home .home-container p{
+    font-size: .5rem;
+}
+.home .home-container .btn-viewmore{
+    margin-top: 4rem;
+    width: 146px;
+    height: 36px;
+   background-color: rgba(0, 0, 0, 0);
+   border: 2px solid #ffffff;
+   color: #ffffff
+ }
+ .home::after{
+    display: inline-block;
+    content: " ";
+    height: 18px;
+    width: 18px;
+    border-width: 0 2px 2px 0;
+    border-color: #a3aacb;
+    border-style: solid;
+    transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+    transform-origin: center;
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    margin-left: -8px;
+ }
+
+ /* home end */
+
+/* service */
+.service{
+    width: 100%;
+    height: 800px;
+}
+.service .row{
+    width: 100%;
+    height: 50%;
+}
+.service .row>div{
+    padding: 5rem 3rem;
+    text-align: center;
+    background-color: #f0f0f0;
+    color: #969696;
+}
+.service .row .service-one{
+    color: #ffffff;
+    background-color: #0dbd74;
+}
+.service .row .service-three{
+    color: #ffffff;
+    background-color: #862ad6;
+}
+.service .row .service-five{
+    color: #ffffff;
+    background-color: #f0284e;
+}
+
+/* service end */
+
+/* about */
+.about {
+    width: 100%;
+    height: 446px;
+    color: #ffffff;
+    background: url('images/img_bg.png') no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.about .about-container{
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+    padding: 100px 0 50px 0;
+}
+.about .about-container p{
+    width: 50%
+}
+/* about end */
+ /* contact */
+ .contact{
+     width: 100%;
+     height: 445px;
+     padding: 3rem 9rem;
+     background-color: #3c404b;
+ }
+ .contact .contact-left input[type="text"]{
+     background-color: #373a44
+ }
+ .contact .contact-left .btn-submit{
+     width: 86px;
+     height: 31px;
+     color: #ffffff;
+     background-color: #08c742;
+     border: none;
+ }

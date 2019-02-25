@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html>
 
 <head>
     <title>Title</title>
@@ -11,24 +11,30 @@
 </head>
 
 <body>
-    <nav class="header" style="background-color: #3c404b">
-        <div class="nav-container">
-            <a class="navbar-brand" href="#">
-                <span class="your">YOUR</span><span class="logo">LOGO</span>
-            </a>
-            <ul class="nav">
+    <nav class="header navbar navbar-expand-lg" style="background-color: #3c404b">
+        <a class="navbar-brand" href="#">
+            <span class="your">YOUR</span><span class="logo">LOGO</span>
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">
+                <i class="glyphicon glyphicon-align-justify" aria-hidden="true" style="background-color:#ffffff"></i>
+            </span>
+        </button>
+        <div class="nav-container navbar-collapse collapse" id="navbar-toggler">
 
+            <ul class="nav navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">HOME</a>
+                    <a class="nav-link" href="#home">HOME</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">SERVICE</a>
+                    <a class="nav-link" href="#service">SERVICE</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">ABOUT</a>
+                    <a class="nav-link" href="#about">ABOUT</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">CONTACT</a>
+                    <a class="nav-link" href="#contact">CONTACT</a>
                 </li>
                 <li class="nav-item">
                     <img class="img-phone" src="images/Mobile.png" width="32" height="32" alt="">
@@ -38,18 +44,88 @@
         </div>
     </nav>
     <section class="home" id="home">
-        <h1>YOURLOGO</h1>
-        <p>IAM A YOUNG WEB DESIGNER</p>
-        
-        <h1>专注于WUI优秀的设计方案</h1>
-        <p>FOCUS ON THE WEB USER INTERFACE EXCELLENT DESIGN SCHEME</p>
+        <div class="home-container">
+            <h1>YOURLOGO</h1>
+            <p>IAM A YOUNG WEB DESIGNER</p>
 
-        <input type="button" value="VIEW MORE">
+            <h1>专注于WUI优秀的设计方案</h1>
+            <p>FOCUS ON THE WEB USER INTERFACE EXCELLENT DESIGN SCHEME</p>
+
+            <input class="btn-viewmore" type="button" value="VIEW MORE">
+        </div>
     </section>
-    <section class="service" id="service"></section>
-    <section class="about" id="about"></section>
-    <section class="contact" id="contact">
+    <section class="service" id="service">
+        <div class="row">
+            <div class="col-md-4 service-one">
+                <img src="images/home_01.png" alt="">
+                <h4>WEB USER INTERFACE</h4>
+                <P>DURING THE LONG DEVEOLOPING SOFTWARE INTERFACE DESIGN WORK HAS NOT BEEN SERIOUS RISE</P>
+            </div>
+            <div class="col-md-4 service-two">
+                <h1>  </h1>
+                <p>INTERFACE DESIGN IS NOT ONLY DURING THE LONG DEVELOPING SOFTWARE, INTERFACE WORK HAS NOT BEEN
+                    SERIOUSLY RISE.
+                    DO INTERFACE DESIGN ALSO IS REFERRED TO AS THE "ARTIST" DEROGATORY IN FACT, SOFTWARE
+                    INTERFACE DESIGN LIKE INDUSTRIAL MODELLING DESIGN OF INDUSTRIAL PRODUCTS,</p>
+            </div>
+            <div class="col-md-4 service-three">
+                <img src="images/home_05.gif" alt="">
+                <h4>NAME CARD DESIGN</h4>
+                <P>DURING THE LONG DEVEOLOPING SOFTWARE INTERFACE DESIGN WORK HAS NOT BEEN SERIOUS RISE</P>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 service-four">
 
+                <h1>“</h1>
+                <p>INTERFACE DESIGN IS NOT ONLY DURING THE LONG DEVELOPING SOFTWARE, INTERFACE WORK HAS NOT BEEN
+                    SERIOUSLY RISE.
+                    DO INTERFACE DESIGN ALSO IS REFERRED TO AS THE "ARTIST" DEROGATORY IN FACT, SOFTWARE
+                    INTERFACE DESIGN LIKE INDUSTRIAL MODELLING DESIGN OF INDUSTRIAL PRODUCTS,</p>
+
+            </div>
+            <div class="col-md-4 service-five">
+                <img src="images/home_10.gif" alt="">
+                <h4>NAME CARD DESIGN</h4>
+                <P>DURING THE LONG DEVEOLOPING SOFTWARE INTERFACE DESIGN WORK HAS NOT BEEN SERIOUS RISE</P>
+            </div>
+            <div class="col-md-4 service-six">
+                <h1>“</h1>
+                <p>INTERFACE DESIGN IS NOT ONLY DURING THE LONG DEVELOPING SOFTWARE, INTERFACE WORK HAS NOT BEEN
+                    SERIOUSLY RISE.
+                    DO INTERFACE DESIGN ALSO IS REFERRED TO AS THE "ARTIST" DEROGATORY IN FACT, SOFTWARE
+                    INTERFACE DESIGN LIKE INDUSTRIAL MODELLING DESIGN OF INDUSTRIAL PRODUCTS,</p>
+
+            </div>
+        </div>
+    </section>
+    <section class=" about row" id="about">
+        <div class="about-container">
+            <h4>HELLO! MY NAME IS LIBIN HU</h4>
+            <p>DURING THE LONG DEVELOPING SOFTWARE, INTERFACE WORK HAS NOT BEEN SERIOUSLY RISE.
+                DO INTERFACE DESIGN ALSO IS REFERRED TO AS THE "ARTIST" DEROGATORY IN FACT, SOFTWARE
+                INTERFACE DESIGN LIKE INDUSTRIAL MODELLING DESIGN OF INDUSTRIAL PRODUCTS,IS AN IMPORTANT
+                BUY THE PRODUCT. A FRIENDLY AND BEAUTIFUL INTERFACE CAN GIVE A PERSON THE COMFORTABLE
+                VISUAL ENJOYMENT,CLOSE THE DISTANCE BETWEEN A MAN AND A COMPUTER. CREATE A SELLING POINT FOR BUSINESS</p>
+        </div>
+    </section>
+    <section class="row contact" id="contact">
+        <div class="col-lg-5  list-group list-group-flush contact-left">
+            <span>PLEASE TELL US WHAT ARE YOU TRYING TO SAY</span>
+            <h3>MESSAGE</h3>
+            <input class="list-group-item" type="text" name="yourname" id="NAME" placeholder="YOURNAME">
+            <input class="list-group-item" type="text" name="email" id="EMAIL" placeholder="EMAIL">
+            <textarea class="list-group-item" name="" id="" cols="30" rows="5"></textarea>
+            <input class=" btn-submit " type="submit" value="Submit">
+        </div>
+        <div class="col-lg-5 list-group contact-right">
+            <p>CONTACT</p>
+            <h3>CONTACT</h3>
+            <p>TEL:+86172782731873 <span> QQ:4646456</span></p>
+            <P>EMAIL:34242332@email.com <span>ADD:CHINA Yiwu</span></P>
+            <p>义乌市公安局北苑分局备案编号:</p>
+            <p>Copyright &copy;2014-2019 ICEDESIGN 全景统计</p>
+        </div>
     </section>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
